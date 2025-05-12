@@ -1,0 +1,22 @@
+{
+    "model": {
+        "temperature": 0.01
+    },
+    "loss": {
+        "name": "Reg",
+        "params": {
+            "lams": [1.0, 1.0],
+            "losses": {
+                "ItemCE": {},
+                "EFViolation": {}
+            }
+        }
+    },
+    "data": {
+        "batch_size": 4,
+        "epochs": 20
+    },
+    "optimizer": {
+        "lr": 0.001
+    }
+}

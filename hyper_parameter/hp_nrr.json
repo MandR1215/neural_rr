@@ -1,0 +1,18 @@
+{
+    "model": {
+        "softsort_tau": 0.1, 
+        "softsort_pow": 2.0,
+        "srr_tau": 0.01
+    },
+    "loss": {
+        "name": "ItemCE",
+        "params": {}
+    },
+    "data": {
+        "batch_size": 4,
+        "epochs": 20
+    },
+    "optimizer": {
+        "lr": 0.001
+    }
+}
