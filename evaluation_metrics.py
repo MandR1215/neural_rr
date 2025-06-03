@@ -94,7 +94,8 @@ class EF1Hard(AllocationMetric):
 
         n, _ = output.shape
         for i in range(n):
-            for j in range(i+1, n):
+            for j in range(n):
+                if i == j: continue
                 envy = (valuation[i] * output[j]).sum().item() - (valuation[i] * output[i]).sum().item()
                 is_envious = (envy > 0)
                 if is_envious:
